@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Prata&display=swap');
+
+:root{
+  --first-color: #8956f1;
+  --second-color:#cb80ff;
+  --third-color:#241b35;
+  --fourth-color:#020102;
+  --header-font:'Prata', serif;
+  --body-font:'Inter', sans-serif;
+  --text:#ffffffb0;
+  --header:white;
+}
+
+body{
+  box-sizing: border-box;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  color: var(--text);
+  font-family: var(--body-font);
+  background:var(--fourth-color);
+
+  
+}
+.toluwaleyi{
+  letter-spacing: 0.2rem;
+  color: var(--first-color);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--first-color);
+}
+
+.mobile{
+      background-color: var(--fourth-color);
+  }
+
+h1{
+  font-weight: 400;
+  font-family: var(--header-font);
+  font-size: rem;
+  color: var(--header);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS styles for desktop devices */
+@media only screen and (min-width: 1024px) {
+  .mobile{
+      display: none;
+  }
+  .desktop-list{
+      word-spacing: 3rem;
+  }
+  .desktop-list a{
+      color: var(--text);
+      text-decoration: none;
+      font-family: var(--body-font);
+      font-weight: 100;
+  }
+  body{
+    width: fit-content;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    
+  }
+  .brands{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  .heads{
+    font-size: 2rem;
+  }
+  .para{
+    font-size: 1.5rem;
+  }
+  
+
+  #Awards h1 {
+      font-size: 2.7rem;
+  }
+  .awards-text{
+    margin-right: 20rem;
+  }
+  #Article{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    
+  }
+  .article-link{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .article-link img{
+    width: inherit;
+  }
+  #About{
+    display: flex;
+    background-color: var(--third-color);
+    gap:2rem;
+    margin-left: -7.98rem;
+    margin-right: -8rem;
+    padding: 2rem 8rem
+  }
+  #About p{
+    font-size: 1.5rem;
+  }
+  footer div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--third-color);
+      margin-left: -7.98rem;
+      margin-right: -8rem;
+      padding: 0rem 8rem
+   }
+   #Chats{
+    margin-top: 4.5rem;
+   }
+   .get{
+      padding: 1rem;
+      color: var(--header);
+      background-color: var(--second-color);
+      border: none;
+      transition: 1s;
+      margin-bottom:4.5rem;
+   }
+ 
+   .get:hover, .get:focus{
+      box-shadow: 
+  inset -3.5em 0 0 0 var(--third-color),
+  inset 3.5em 0 0 0 var(--third-color);  
+}
+a{
+  position: relative;
+  cursor: pointer;
+}
+a::before{
+  content: '';
+  background-color:var(--header);
+  height: 4px;
+  width: 0;
+  position: absolute;
+  top: 78%;
+  transition: width 0.5s;
+}
+a:hover::before{
+  content: '';
+  width: 100%;
+}
+}
+
